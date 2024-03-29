@@ -82,16 +82,14 @@ body{
 .info{
     width: 100%;
     height: 500px;
-    display: flex;
-    flex-direction: column;
+    text-align: center;
     justify-content: center;
-    align-items: center;
-    gap: 5px;
-
+    padding: 5%;
+    
 }
 
 .text{
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -103,15 +101,17 @@ body{
     );
     
 }
-.info .text img{
-    width: 40%;
+.info .text #imagen{
+    width: 100%;
     height: 80%;
     border-radius: 10%;
 }
-.info .text img:hover{
+.text #imagen:hover{
     transform: scale(1.20);
 }
 .lorem{
+    width: 100%;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -145,26 +145,55 @@ body{
 }
 
 @media screen and (max-width:980px) {
-    .header{
-        height: 200px;
+    .info{
+        padding: 0;
     }
     .text{
-        
+        padding: 5%;
+        margin-top: 35%;
+        width: 100%;
+        height: 30%;
         display: flex;
         flex-direction: column;
+        gap: 60px;
     }
-    .info .text img{
-        display: none;
+    .lorem{
+        height: 500px;
+    }
+    .info .text #imagen{
+        width: 90%;
+        height: 80%;
     }
     .row .col .card #img{
         height: 250px;
     }
     
     .titulo-section-perros{
+        background-size: cover;
         height: 200px;
     }
     .titulo-section-gatos{
+        background-size: cover;
         height: 200px;
     }
-    
+    .bar-perros {
+        margin-top: 30%;
+    }
+}
+
+@media screen and (max-width:700px){
+    .titulo-section-perros{
+        background-size: contain;
+        height: 200px;
+    }
+    .titulo-section-gatos{
+        background-size: contain;
+        height: 200px;
+    } 
+    .text{
+        margin-top: 50%;
+    }
+    .lorem{
+        height: 630px;
+    }
 }
