@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #ACE2E1;
+    /* background-color: #ACE2E1; */
     font-family: serif;
 }
 
@@ -26,11 +26,9 @@ body{
     padding: 15%;
 }
 
-.titulo-section{
-    /* margin-top: 5%; */
-    display: flex;
-    justify-content: center;
-    text-align: center;
+.row .col .card img{
+    width: 100%;
+    height: 400px;
 }
 
 .col{
@@ -44,6 +42,29 @@ body{
 }
 
 /* section info */
+
+
+.titulo-section-perros{
+    background-image: url("./img/bannerPerros.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 430px;
+    display: flex;
+    justify-content: center;
+    
+}
+.titulo-section-gatos{
+    background-image: url("./img/bannerPerros.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 430px;
+    display: flex;
+    justify-content: center;
+    
+
+}
 
 .info{
     width: 100%;
@@ -103,4 +124,20 @@ body{
     filter: drop-shadow(
         0 0 10px rgba(0,0,0, .1)
     );
+}
+
+.lorem .icons i:hover{
+    background-color: aliceblue;
+    transform: scale(1.20);
+}
+
+@media screen and (max-width:980px) {
+    
+    .text{
+        display: flex;
+        flex-direction: column;
+    }
+    .info .text img{
+        width: 80%;
+    }
 }
