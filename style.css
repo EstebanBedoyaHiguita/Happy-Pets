@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ACE2E1;
+    font-family: serif;
+}
+
+.navbar{
+    
+    position: sticky;
+}
+.header{
+    
+    background-image: url("./img/Tenemos\ todo\ para\ que\ consientas\ a\ tus\ mascotas\ \(7\).jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 400px;
+
+}
+
+/* cards */
+.row{
+    padding: 15%;
+}
+
+.titulo-section{
+    /* margin-top: 5%; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.col{
+    padding: 5%;
+}
+.card{
+    background-color: #41C9E2;
+    filter: drop-shadow(
+        0 0 15px rgba(0,0,0, .4)
+    )
+}
+
+/* section info */
+
+.info{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.text{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+    
+    align-items: center;
+    filter: drop-shadow(
+        0 0 15px rgba(0,0,0, .4)
+    );
+    
+}
+.info .text img{
+    width: 40%;
+    height: 80%;
+    border-radius: 10%;
+}
+.info .text img:hover{
+    transform: scale(1.20);
+}
+.lorem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.lorem .icons{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.lorem .icons i{
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #41C9E2;
+    filter: drop-shadow(
+        0 0 10px rgba(0,0,0, .1)
+    );
+}
