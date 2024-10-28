@@ -14,9 +14,34 @@ body{
     /* background-color: #ACE2E1; */
     font-family: "Open Sans", sans-serif;
     padding: 3%;
+    
+    
+    
 }
 
 #logo{
     width: 15%;
     height: 15%;
+}
+
+.cardsPerros{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 50px;
+        
+}
+
+.cardsGatos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.cardsPerros .card img{
+    width: 200px;
+    height: 200px;
 }
